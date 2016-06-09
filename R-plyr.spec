@@ -4,7 +4,7 @@
 #
 Name     : R-plyr
 Version  : 1.8.4
-Release  : 25
+Release  : 26
 URL      : http://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
 Summary  : Tools for Splitting, Applying and Combining Data
@@ -17,10 +17,8 @@ Requires: R-R6
 Requires: R-memoise
 Requires: R-digest
 Requires: R-magrittr
-Requires: R-abind
 BuildRequires : R-R6
 BuildRequires : R-Rcpp
-BuildRequires : R-abind
 BuildRequires : R-digest
 BuildRequires : R-foreach
 BuildRequires : R-magrittr
