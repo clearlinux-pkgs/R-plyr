@@ -4,7 +4,7 @@
 #
 Name     : R-plyr
 Version  : 1.8.4
-Release  : 31
+Release  : 32
 URL      : http://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
 Summary  : Tools for Splitting, Applying and Combining Data
@@ -35,11 +35,11 @@ lib components for the R-plyr package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484545577
+export SOURCE_DATE_EPOCH=1489129326
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1484545577
+export SOURCE_DATE_EPOCH=1489129326
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
