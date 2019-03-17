@@ -1,0 +1,17 @@
+# This file contains recursive sources that require this package
+R-Lahman
+R-RNeXML
+R-bold
+R-broom
+R-cowplot
+R-emmeans
+R-ggplot2
+R-ggridges
+R-ggvis
+R-kimisc
+R-pdp
+R-reshape
+R-reshape2
+R-rsdmx
+R-scales
+R-solrium
