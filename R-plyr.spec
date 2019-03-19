@@ -4,15 +4,18 @@
 #
 Name     : R-plyr
 Version  : 1.8.4
-Release  : 58
-URL      : http://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
-Source0  : http://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
+Release  : 59
+URL      : https://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/plyr_1.8.4.tar.gz
 Summary  : Tools for Splitting, Applying and Combining Data
 Group    : Development/Tools
 License  : MIT
 Requires: R-plyr-lib = %{version}-%{release}
-Requires: R-foreach
+Requires: R-Rcpp
+Requires: R-rlang
+BuildRequires : R-Rcpp
 BuildRequires : R-foreach
+BuildRequires : R-rlang
 BuildRequires : buildreq-R
 
 %description
@@ -36,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552810751
+export SOURCE_DATE_EPOCH=1552959084
 
 %install
-export SOURCE_DATE_EPOCH=1552810751
+export SOURCE_DATE_EPOCH=1552959084
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
