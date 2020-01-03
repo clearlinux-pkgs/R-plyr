@@ -4,7 +4,7 @@
 #
 Name     : R-plyr
 Version  : 1.8.5
-Release  : 66
+Release  : 67
 URL      : https://cran.r-project.org/src/contrib/plyr_1.8.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/plyr_1.8.5.tar.gz
 Summary  : Tools for Splitting, Applying and Combining Data
