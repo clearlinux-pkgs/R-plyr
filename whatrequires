@@ -1,9 +1,7 @@
 # This file contains recursive sources that require this package
 R-ClustVarLV
-R-Cubist
 R-GGally
 R-Lahman
-R-PerformanceAnalytics
 R-RNeXML
 R-bold
 R-caret
@@ -12,11 +10,10 @@ R-ggjoy
 R-ggridges
 R-ggvis
 R-kimisc
+R-pROC
 R-pdp
 R-reshape
 R-reshape2
-R-robCompositions
 R-rsdmx
 R-scales
 R-solrium
-R-taxize
