@@ -4,7 +4,7 @@
 #
 Name     : R-plyr
 Version  : 1.8.6
-Release  : 69
+Release  : 70
 URL      : https://cran.r-project.org/src/contrib/plyr_1.8.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/plyr_1.8.6.tar.gz
 Summary  : Tools for Splitting, Applying and Combining Data
@@ -12,9 +12,7 @@ Group    : Development/Tools
 License  : MIT
 Requires: R-plyr-lib = %{version}-%{release}
 Requires: R-Rcpp
-Requires: R-foreach
 BuildRequires : R-Rcpp
-BuildRequires : R-foreach
 BuildRequires : buildreq-R
 
 %description
@@ -36,21 +34,22 @@ lib components for the R-plyr package.
 
 %prep
 %setup -q -c -n plyr
+cd %{_builddir}/plyr
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583250218
+export SOURCE_DATE_EPOCH=1589581653
 
 %install
-export SOURCE_DATE_EPOCH=1583250218
+export SOURCE_DATE_EPOCH=1589581653
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
