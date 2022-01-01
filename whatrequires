@@ -1,19 +1,14 @@
 # This file contains recursive sources that require this package
 R-ClustVarLV
 R-GGally
-R-Lahman
 R-RNeXML
 R-bold
 R-caret
-R-emmeans
-R-ggjoy
 R-ggridges
-R-ggvis
 R-kimisc
 R-pROC
 R-pdp
 R-reshape
 R-reshape2
 R-rsdmx
-R-scales
 R-solrium
